@@ -7,6 +7,9 @@ homepage: https://github.com/v3rm0n/intercom_flutter
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: ^0.6.2
 
 dev_dependencies:
   flutter_test:
@@ -20,6 +23,9 @@ flutter:
         pluginClass: IntercomFlutterPlugin
       ios:
         pluginClass: IntercomFlutterPlugin
+      web:
+        pluginClass: IntercomWeb
+        fileName: src/intercom_web.dart
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
